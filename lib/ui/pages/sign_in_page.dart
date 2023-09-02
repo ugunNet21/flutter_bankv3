@@ -1,4 +1,5 @@
 import 'package:bank_v2/shared/theme.dart';
+import 'package:bank_v2/widgets/buttons.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatelessWidget {
@@ -99,6 +100,18 @@ class SignInPage extends StatelessWidget {
                     'Forgot Password',
                     style: blueTextStyle,
                   ),
+                ),
+                SizedBox(),
+                CustomFiledButton(
+                  title: "Sign In",
+                  onPressed: () {},
+                ),
+                SizedBox(
+                  height: 50,
+                ),
+                CustomTextButton(
+                  title: "Create New Account",
+                  onPressed: () {},
                 ),
               ],
             ),
