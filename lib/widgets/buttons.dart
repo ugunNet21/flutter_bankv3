@@ -41,13 +41,13 @@ class CustomFiledButton extends StatelessWidget {
   }
 }
 
-class CustomTextWidget extends StatelessWidget {
+class CustomTextButton extends StatelessWidget {
   final String title;
   final double width;
   final double height;
   final VoidCallback? onPressed;
 
-  const CustomTextWidget({
+  const CustomTextButton({
     super.key,
     required this.title,
     this.width = double.infinity,
