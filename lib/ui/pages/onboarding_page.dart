@@ -1,4 +1,5 @@
 import 'package:bank_v2/shared/theme.dart';
+import 'package:bank_v2/ui/pages/sign_in_page.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
@@ -129,7 +130,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
                               width: double.infinity,
                               height: 24,
                               child: TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => SignInPage(),
+                                    ),
+                                  );
+                                },
                                 style: TextButton.styleFrom(
                                     padding: EdgeInsets.zero),
                                 child: Text(
@@ -201,7 +209,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                               ),
                             ),
                           ],
-                        )
+                        ),
                 ],
               ),
             ),
