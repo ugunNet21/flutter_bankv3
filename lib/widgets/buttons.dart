@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../shared/theme.dart';
 
+
+// custom filed button
 class CustomFiledButton extends StatelessWidget {
   final String title;
   final double width;
@@ -41,6 +43,7 @@ class CustomFiledButton extends StatelessWidget {
   }
 }
 
+// custom text button
 class CustomTextButton extends StatelessWidget {
   final String title;
   final double width;
