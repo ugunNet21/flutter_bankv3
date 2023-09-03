@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../shared/theme.dart';
 import '../../widgets/buttons.dart';
-import '../../widgets/forms.dart';
 
 class SignUpSetKtpPage extends StatelessWidget {
   const SignUpSetKtpPage({super.key});
@@ -91,7 +90,10 @@ class SignUpSetKtpPage extends StatelessWidget {
                 ),
                 CustomFiledButton(
                   title: "Continue",
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, '/sign-up-success', (route) => false);
+                  },
                 ),
                 const SizedBox(
                   height: 60,
