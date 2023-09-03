@@ -73,7 +73,10 @@ class SignInPage extends StatelessWidget {
                 ),
                 CustomFiledButton(
                   title: "Sign In",
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, '/home', (route) => false);
+                  },
                 ),
                 const SizedBox(
                   height: 50,
@@ -81,7 +84,8 @@ class SignInPage extends StatelessWidget {
                 CustomTextButton(
                   title: "Create New Account",
                   onPressed: () {
-                    Navigator.pushNamed(context, '/sign-up');
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, '/sign-up', (route) => false);
                   },
                 ),
               ],
