@@ -1,5 +1,4 @@
 import 'package:bank_v2/shared/theme.dart';
-import 'package:bank_v2/ui/pages/sign_in_page.dart';
 import 'package:bank_v2/widgets/buttons.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -105,7 +104,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             CustomFiledButton(
                               title: 'Get Started',
                               onPressed: () {
-                                carouselController.nextPage();
+                                Navigator.pushNamed(context, '/sign-up');
                               },
                             ),
                             const SizedBox(
