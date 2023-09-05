@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../shared/theme.dart';
-import '../../widgets/buttons.dart';
+import '../widgets/buttons.dart';
 
 class SignUpSetKtpPage extends StatelessWidget {
   const SignUpSetKtpPage({super.key});

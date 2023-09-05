@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../shared/theme.dart';
+import '../../shared/theme.dart';
 
 
 // custom filed button

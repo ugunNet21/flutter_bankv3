@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../shared/theme.dart';
-import '../../widgets/buttons.dart';
-import '../../widgets/forms.dart';
+import '../widgets/buttons.dart';
+import '../widgets/forms.dart';
 
 class SignUpSetProfilePage extends StatelessWidget {
   const SignUpSetProfilePage({super.key});

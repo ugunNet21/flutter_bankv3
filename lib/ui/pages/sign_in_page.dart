@@ -1,6 +1,6 @@
 import 'package:bank_v2/shared/theme.dart';
-import 'package:bank_v2/widgets/buttons.dart';
-import 'package:bank_v2/widgets/forms.dart';
+import 'package:bank_v2/ui/widgets/buttons.dart';
+import 'package:bank_v2/ui/widgets/forms.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatelessWidget {
