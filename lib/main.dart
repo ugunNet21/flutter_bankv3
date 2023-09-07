@@ -1,6 +1,10 @@
 import 'package:bank_v2/shared/theme.dart';
 import 'package:bank_v2/ui/pages/home_page.dart';
 import 'package:bank_v2/ui/pages/onboarding_page.dart';
+import 'package:bank_v2/ui/pages/pin_page.dart';
+import 'package:bank_v2/ui/pages/profile_edit_page.dart';
+import 'package:bank_v2/ui/pages/profile_edit_pin_page.dart';
+import 'package:bank_v2/ui/pages/profile_edit_success_page.dart';
 import 'package:bank_v2/ui/pages/profile_page.dart';
 import 'package:bank_v2/ui/pages/sign_in_page.dart';
 import 'package:bank_v2/ui/pages/sign_up_page.dart';
@@ -44,6 +48,10 @@ class MyApp extends StatelessWidget {
         '/sign-up-success': (context) => const SignUpSuccessPage(),
         '/home': (context) => const HomePage(),
         '/profile': (context) => const ProfilePage(),
+        '/pin': (context) => const PinPage(),
+        '/profile-edit': (context) => const ProfileEditPage(),
+        '/profile-edit-pin': (context) => const ProfileEditPinPage(),
+        '/profile-edit-success': (context) => const ProfileEditSuccessPage(),
       },
     );
   }

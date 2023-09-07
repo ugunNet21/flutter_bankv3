@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../shared/theme.dart';
 
-
 // custom filed button
 class CustomFiledButton extends StatelessWidget {
   final String title;
@@ -72,6 +71,40 @@ class CustomTextButton extends StatelessWidget {
           title,
           style: greyTextStyle.copyWith(
             fontSize: 16,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class CustomInputButton extends StatelessWidget {
+  final String title;
+  final VoidCallback? onTap;
+  const CustomInputButton({
+    super.key,
+    required this.title,
+    this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        height: 60,
+        width: 60,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: numberBackgroundColor,
+        ),
+        child: Center(
+          child: Text(
+            title,
+            style: greyTextStyle.copyWith(
+              fontSize: 22,
+              fontWeight: semibold,
+            ),
           ),
         ),
       ),

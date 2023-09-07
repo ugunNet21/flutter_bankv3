@@ -11,9 +11,8 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       // backgroundColor: lightBackgroundColor,
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "My Profile",
-          
         ),
       ),
       body: ListView(
@@ -70,7 +69,7 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 Text(
@@ -80,18 +79,26 @@ class ProfilePage extends StatelessWidget {
                     fontWeight: medium,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 ProfileMenuItem(
                   iconUrl: 'assets/ic_edit_profile.png',
                   title: 'Edit Profile',
-                  onTap: () {},
+                  onTap: () async {
+                    if (await Navigator.pushNamed(context, '/pin') == true) {
+                      Navigator.pushNamed(context, '/profile-edit');
+                    }
+                  },
                 ),
                 ProfileMenuItem(
                   iconUrl: 'assets/ic_pin.png',
                   title: 'My Pin',
-                  onTap: () {},
+                  onTap: () async {
+                    if (await Navigator.pushNamed(context, '/pin') == true) {
+                      Navigator.pushNamed(context, '/profile-edit-pin');
+                    }
+                  },
                 ),
                 ProfileMenuItem(
                   iconUrl: 'assets/ic_wallet.png',
