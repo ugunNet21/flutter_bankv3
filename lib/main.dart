@@ -12,6 +12,9 @@ import 'package:bank_v2/ui/pages/sign_up_set_ktp_page.dart';
 import 'package:bank_v2/ui/pages/sign_up_set_profile_page.dart';
 import 'package:bank_v2/ui/pages/sign_up_success_page.dart';
 import 'package:bank_v2/ui/pages/splash_page.dart';
+import 'package:bank_v2/ui/pages/topup_amount_page.dart';
+import 'package:bank_v2/ui/pages/topup_page.dart';
+import 'package:bank_v2/ui/pages/topup_success.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -52,6 +55,9 @@ class MyApp extends StatelessWidget {
         '/profile-edit': (context) => const ProfileEditPage(),
         '/profile-edit-pin': (context) => const ProfileEditPinPage(),
         '/profile-edit-success': (context) => const ProfileEditSuccessPage(),
+        '/topup': (context) => const TopupPage(),
+        '/topup-amount': (context) => const TopUpAmountPage(),
+        '/topup-success': (context) => const TopupSuccessPage(),
       },
     );
   }

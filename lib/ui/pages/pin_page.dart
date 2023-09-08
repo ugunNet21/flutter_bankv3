@@ -20,7 +20,7 @@ class _PinPageState extends State<PinPage> {
     }
     // print(pinController.text);
 
-    if(pinController.text == '121212'){
+    if(pinController.text == '123456'){
       Navigator.pop(context, true);
     }
   }
@@ -83,8 +83,8 @@ class _PinPageState extends State<PinPage> {
                 height: 66,
               ),
               Wrap(
-                spacing: 40,
-                runSpacing: 40,
+                spacing: 20,
+                runSpacing: 20,
                 children: [
                   CustomInputButton(
                     title: '1',
