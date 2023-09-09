@@ -15,6 +15,9 @@ import 'package:bank_v2/ui/pages/splash_page.dart';
 import 'package:bank_v2/ui/pages/topup_amount_page.dart';
 import 'package:bank_v2/ui/pages/topup_page.dart';
 import 'package:bank_v2/ui/pages/topup_success.dart';
+import 'package:bank_v2/ui/pages/transfer_amount_page.dart';
+import 'package:bank_v2/ui/pages/transfer_page.dart';
+import 'package:bank_v2/ui/pages/transfer_success_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -58,6 +61,9 @@ class MyApp extends StatelessWidget {
         '/topup': (context) => const TopupPage(),
         '/topup-amount': (context) => const TopUpAmountPage(),
         '/topup-success': (context) => const TopupSuccessPage(),
+        '/transfer': (context) => const TransferPage(),
+        '/transfer-amount': (context) => const TransferAmountPage(),
+        '/transfer-success': (context) => const TransferSuccessPage(),
       },
     );
   }

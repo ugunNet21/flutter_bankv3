@@ -111,7 +111,7 @@ class HomePage extends StatelessWidget {
                 height: 2,
               ),
               Text(
-                'Arsyfa Z.D',
+                'Idan Rohman',
                 style: blackTextStyle.copyWith(
                   fontSize: 20,
                   fontWeight: semibold,
@@ -133,7 +133,7 @@ class HomePage extends StatelessWidget {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   image: AssetImage(
-                    'assets/img_profile.png',
+                    'assets/pa_idan.png',
                   ),
                 ),
               ),
@@ -185,14 +185,14 @@ class HomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Arsyfa Z.D',
+            'Idan Rohman',
             style: whiteTextStyle.copyWith(
               fontSize: 18,
               fontWeight: medium,
             ),
           ),
           Text(
-            '*** **** **** 1280',
+            '*** **** **** 1223',
             style: whiteTextStyle.copyWith(
               fontSize: 18,
               fontWeight: medium,
@@ -209,7 +209,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Text(
-            'RP.12.800',
+            'RP.15.800.000.998',
             style: whiteTextStyle.copyWith(
               fontSize: 24,
               fontWeight: semibold,
@@ -238,7 +238,7 @@ class HomePage extends StatelessWidget {
           Row(
             children: [
               Text(
-                'Level 1',
+                'Level 10',
                 style: blackTextStyle.copyWith(
                   fontSize: 14,
                   fontWeight: medium,
@@ -252,7 +252,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               Text(
-                'of Rp 20.000',
+                'of Rp 20.000.000',
                 style: blackTextStyle.copyWith(
                   fontWeight: semibold,
                 ),
@@ -307,7 +307,9 @@ class HomePage extends StatelessWidget {
               HomeServiceItem(
                 iconUrl: 'assets/ic_send.png',
                 title: 'Send',
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/transfer');
+                },
               ),
               HomeServiceItem(
                 iconUrl: 'assets/ic_withdraw.png',
@@ -317,7 +319,12 @@ class HomePage extends StatelessWidget {
               HomeServiceItem(
                 iconUrl: 'assets/ic_more.png',
                 title: 'More',
-                onTap: () {},
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) => const MoreDialog(),
+                  );
+                },
               ),
             ],
           )
@@ -479,6 +486,79 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ],
+      ),
+    );
+  }
+}
+
+class MoreDialog extends StatelessWidget {
+  const MoreDialog({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      backgroundColor: Colors.transparent,
+      insetPadding: EdgeInsets.zero,
+      alignment: Alignment.bottomCenter,
+      content: Container(
+        height: 326,
+        width: MediaQuery.of(context).size.width,
+        padding: EdgeInsets.all(30),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: lightBackgroundColor,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Do more With Us',
+              style: blackTextStyle.copyWith(
+                fontSize: 16,
+                fontWeight: semibold,
+              ),
+            ),
+            const SizedBox(
+              height: 13,
+            ),
+            Wrap(
+              spacing: 35,
+              runSpacing: 20,
+              children: [
+                HomeServiceItem(
+                  iconUrl: 'assets/ic_product_data.png',
+                  title: 'Data',
+                  onTap: () {},
+                ),
+                HomeServiceItem(
+                  iconUrl: 'assets/ic_product_water.png',
+                  title: 'Water',
+                  onTap: () {},
+                ),
+                HomeServiceItem(
+                  iconUrl: 'assets/ic_product_food.png',
+                  title: 'Food',
+                  onTap: () {},
+                ),
+                HomeServiceItem(
+                  iconUrl: 'assets/ic_product_movie.png',
+                  title: 'Movie',
+                  onTap: () {},
+                ),
+                HomeServiceItem(
+                  iconUrl: 'assets/ic_product_stream.png',
+                  title: 'Stream',
+                  onTap: () {},
+                ),
+                HomeServiceItem(
+                  iconUrl: 'assets/ic_product_travel.png',
+                  title: 'Travel',
+                  onTap: () {},
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
