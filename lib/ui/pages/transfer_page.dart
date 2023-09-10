@@ -46,7 +46,10 @@ class TransferPage extends StatelessWidget {
           CustomFiledButton(
             title: 'Continue',
             onPressed: () {
-              Navigator.pushNamed(context, '/transfer-amount');
+              Navigator.pushNamed(
+                context,
+                '/transfer-amount',
+              );
             },
           ),
           const SizedBox(
@@ -118,8 +121,8 @@ Widget buildResult() {
           height: 14,
         ),
         Wrap(
-          spacing: 17,
-          runSpacing: 17,
+          spacing: 10,
+          runSpacing: 10,
           children: [
             TransferResultUserItem(
               imageUrl: 'assets/pa_ade_bun.png',

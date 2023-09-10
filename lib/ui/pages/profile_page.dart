@@ -45,7 +45,7 @@ class ProfilePage extends StatelessWidget {
                       shape: BoxShape.circle,
                       image: DecorationImage(
                         image: AssetImage(
-                          'assets/img_profile.png',
+                          'assets/pa_idan.png',
                         ),
                       ),
                     ),
@@ -73,7 +73,7 @@ class ProfilePage extends StatelessWidget {
                   height: 16,
                 ),
                 Text(
-                  "Arsyfa Z.D",
+                  "Idan Rohman",
                   style: blackTextStyle.copyWith(
                     fontSize: 18,
                     fontWeight: medium,
