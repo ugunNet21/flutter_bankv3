@@ -49,17 +49,18 @@ class DataPackagePage extends StatelessWidget {
             height: 14,
           ),
           Wrap(
-            spacing: 17,
-            runSpacing: 17,
+            spacing: 15,
+            runSpacing: 15,
             children: [
               PackageItem(
                 amount: 1000,
                 price: 150000,
+                isSelected: true,
               ),
               PackageItem(
                 amount: 12,
                 price: 100000,
-                isSelected: true,
+                isSelected: false,
               ),
               PackageItem(
                 amount: 100,
