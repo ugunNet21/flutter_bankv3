@@ -53,8 +53,8 @@ class DataPackagePage extends StatelessWidget {
             runSpacing: 17,
             children: [
               PackageItem(
-                amount: 10,
-                price: 100000,
+                amount: 1000,
+                price: 150000,
               ),
               PackageItem(
                 amount: 12,

@@ -1,3 +1,4 @@
+import 'package:bank_v2/shared/shared_methods.dart';
 import 'package:bank_v2/shared/theme.dart';
 import 'package:bank_v2/ui/widgets/home_latest_transaction_item.dart';
 import 'package:bank_v2/ui/widgets/home_service_items.dart';
@@ -209,7 +210,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Text(
-            'RP.15.800.000.998',
+            formatCurrency(23000000000),
             style: whiteTextStyle.copyWith(
               fontSize: 24,
               fontWeight: semibold,
@@ -252,7 +253,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               Text(
-                'of Rp 20.000.000',
+                ' of ${formatCurrency(344444009)}',
                 style: blackTextStyle.copyWith(
                   fontWeight: semibold,
                 ),
@@ -355,37 +356,37 @@ class HomePage extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             color: whiteColor,
           ),
-          child: const Column(
+          child: Column(
             children: [
               HomeLatestTransactiontItem(
                 iconUrl: 'assets/ic_topup.png',
                 title: 'Top Up',
                 time: 'Yesterday',
-                value: '+450.000',
+                value: '+ ${formatCurrency(450000, symbol: '')}',
               ),
               HomeLatestTransactiontItem(
                 iconUrl: 'assets/ic_transaction_cat1.png',
                 title: 'Cashback',
                 time: 'Sept 1',
-                value: '+ 22.000',
+                value: '+ ${formatCurrency(450000, symbol: '')}',
               ),
               HomeLatestTransactiontItem(
                 iconUrl: 'assets/ic_transaction_cat2.png',
                 title: 'Top Up',
                 time: 'Withdraw',
-                value: '+450.000',
+                value: '+ ${formatCurrency(450000, symbol: '')}',
               ),
               HomeLatestTransactiontItem(
                 iconUrl: 'assets/ic_transaction_cat3.png',
                 title: 'Transfer',
                 time: 'Yesterday',
-                value: '+450.000',
+                value: '+ ${formatCurrency(450000, symbol: '')}',
               ),
               HomeLatestTransactiontItem(
                 iconUrl: 'assets/ic_transaction_cat4.png',
                 title: 'Electric',
                 time: 'Yesterday',
-                value: '+450.000',
+                value: '- ${formatCurrency(450000, symbol: '')}',
               ),
             ],
           ),
